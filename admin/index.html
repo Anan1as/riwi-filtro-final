@@ -11,13 +11,14 @@
 		<link href="../template/css/bootstrap.min.css" rel="stylesheet" type="text/css" id="app-style" />
 		<link href="../template/css/app.min.css" rel="stylesheet" type="text/css" />
 		<link href="../template/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <script src="../assets/js/admin-index.js" defer></script>
     </head>
     <body>
         <div id="wrapper">
             <div class="app-menu">
                 <div class="logo-box">
                     <a href="index.html">
-                           <center><img src="https://riwi.io/wp-content/uploads/2023/07/Fondo-claro-logo.png" class="w-50" alt=""></center>
+                            <center><img src="https://riwi.io/wp-content/uploads/2023/07/Fondo-claro-logo.png" class="w-50" alt=""></center>
                     </a>
                 </div>
                 <div class="scrollbar">
@@ -58,9 +59,9 @@
                         </li>
 
                         <li class="menu-item">
-                            <a href="./brands/index.html" class="menu-link text-danger">
+                            <a href="#" class="menu-link text-danger">
                                 <span class="menu-icon"><i class="fe-log-out"></i></span>
-                                <span class="menu-text"> Cerrar sesión </span>
+                                <span id="closeSession" class="menu-text"> Cerrar sesión </span>
                             </a>
                         </li>
                     </ul>
@@ -83,7 +84,7 @@
                                                 </div>
                                                 <div class="col-6">
                                                     <div class="text-end">
-                                                        <h3 class="text-dark mt-1"><span data-plugin="counterup">12</span></h3>
+                                                        <h3 class="text-dark mt-1"><span id="counterAdmins" data-plugin="counterup"></span></h3>
                                                         <p class="text-muted mb-1 text-truncate">Administradores</p>
                                                     </div>
                                                 </div>
@@ -104,7 +105,7 @@
                                                 </div>
                                                 <div class="col-6">
                                                     <div class="text-end">
-                                                        <h3 class="text-dark mt-1"><span data-plugin="counterup">10</span></h3>
+                                                        <h3 class="text-dark mt-1"><span id="counterMarcas" data-plugin="counterup"></span></h3>
                                                         <p class="text-muted mb-1 text-truncate">Marcas</p>
                                                     </div>
                                                 </div>
@@ -125,7 +126,7 @@
                                                 </div>
                                                 <div class="col-6">
                                                     <div class="text-end">
-                                                        <h3 class="text-dark mt-1"><span data-plugin="counterup">10</span></h3>
+                                                        <h3 class="text-dark mt-1"><span id="counterPqrs" data-plugin="counterup"></span></h3>
                                                         <p class="text-muted mb-1 text-truncate">PQRS</p>
                                                     </div>
                                                 </div>
