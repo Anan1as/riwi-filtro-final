@@ -2,8 +2,19 @@
   "admins": [
     {
       "id": "ff15",
-      "names": "Admin Outlet",
+      "name": "Admin Outlet",
       "email": "admin@outlet.com",
+      "password": "password"
+    },
+    {
+      "name": "Mario David",
+      "email": "enrique@outlet.com",
+      "id": "4ca1"
+    },
+    {
+      "id": "921b",
+      "name": "Ronald Ortiz",
+      "email": "ronald.O@outlet.com",
       "password": "password"
     }
   ],

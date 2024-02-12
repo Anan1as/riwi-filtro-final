@@ -35,6 +35,8 @@ btnAutenticarme.addEventListener('click', function() {
             aviso.innerHTML = '';
 
             localStorage.setItem('id', user.id);
+            localStorage.setItem('name', user.name);
+
             location.href = './admin/index.html';
         } else {
             aviso.innerHTML = 'Usuario o contraseña incorrectos';

@@ -5,7 +5,6 @@ if(id == null) {
     location.href = '../index.html';
 }
 
-
 //Cerrar sesión
 let closeSession = document.getElementById('closeSession');
 
@@ -15,8 +14,8 @@ closeSession.addEventListener('click', function() {
     localStorage.removeItem('id');
 });
 
-//Contadores principales
 
+/*Contadores principales*/
 
 //Contador Admins
 let counterAdmins = document.getElementById('counterAdmins');
@@ -27,6 +26,7 @@ fetch('http://localhost:3000/admins')
     counterAdmins.innerHTML = data.length;
 });
 
+
 //Contador de marcas
 let counterMarcas = document.getElementById('counterMarcas');
 
@@ -36,8 +36,8 @@ fetch('http://localhost:3000/brands')
     counterMarcas.innerHTML = data.length;
 });
 
-//Contador de PQRS
 
+//Contador de PQRS
 let counterPqrs = document.getElementById('counterPqrs');
 
 fetch('http://localhost:3000/pqrs')

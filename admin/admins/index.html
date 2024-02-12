@@ -10,13 +10,14 @@
 		<link href="../../template/css/bootstrap.min.css" rel="stylesheet" type="text/css" id="app-style" />
 		<link href="../../template/css/app.min.css" rel="stylesheet" type="text/css" />
 		<link href="../../template/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <script src="../../assets/js/admin-admins.js" defer></script>
     </head>
     <body>
         <div id="wrapper">
             <div class="app-menu">
                 <div class="logo-box">
                     <a href="index.html">
-                           <center><img src="https://riwi.io/wp-content/uploads/2023/07/Fondo-claro-logo.png" class="w-50" alt=""></center>
+                            <center><img src="https://riwi.io/wp-content/uploads/2023/07/Fondo-claro-logo.png" class="w-50" alt=""></center>
                     </a>
                 </div>
                 <div class="scrollbar">
@@ -57,9 +58,9 @@
                             </li>
 
                         <li class="menu-item">
-                            <a href="./brands/index.html" class="menu-link text-danger">
+                            <a href="#" class="menu-link text-danger">
                                 <span class="menu-icon"><i class="fe-log-out"></i></span>
-                                <span class="menu-text"> Cerrar sesión </span>
+                                <span id="closeSession" class="menu-text"> Cerrar sesión </span>
                             </a>
                         </li>
                     </ul>
@@ -73,7 +74,7 @@
                             <div class="col-md-12">
                                  <div class="card">
                                     <div class="card-body">
-                                        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        <button id="btnNewAdmin" type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                             Crear nuevo Administrador
                                            </button>
                                         <div class="table-responsive mt-4">
@@ -86,26 +87,16 @@
                                                         <th>ACCIONES</th>
                                                     </tr>
                                                 </thead>
-                                                <tbody>
+                                                <tbody id="tableAdmins">
                                                     <tr>
-                                                        <td><input type="text" class="form-control form-control-sm"></td>
-                                                        <td><input type="text" class="form-control form-control-sm"></td>
-                                                        <td><input type="text" class="form-control form-control-sm"></td>
+                                                        <td><input id="idAdminBuscar" onkeyup="buscarID()" type="text" class="form-control form-control-sm"></td>
+                                                        <td><input id="nameAdminBuscar" onkeyup="buscarName()" type="text" class="form-control form-control-sm"></td>
+                                                        <td><input id="emailAdminBuscar" onkeyup="buscarEmail()" type="text" class="form-control form-control-sm"></td>
                                                         <td>
-                                                            <button class="btn btn-sm btn-info">Buscar</button>
-                                                            
+                                                            Este botón cometió un crimen federal.
                                                         </td>
                                                     </tr>
-                                                    <tr>
-                                                        <td>ff15</td>
-                                                        <td>Admin Outlet</td>
-                                                        <td>admin@outlet.com</td>
-                                                        <td>
-                                                            <button class="btn btn-sm btn-info">Detalles</button>
-                                                            <button class="btn btn-sm btn-warning">Editar</button>
-                                                            <button class="btn btn-sm btn-danger">Eliminar</button>
-                                                        </td>
-                                                    </tr>
+                                                    <!--Content on Javascript-->
                                                 </tbody>
                                             </table>
                                         </div>
@@ -134,15 +125,14 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <h1 id="titleModal" class="modal-title fs-5" id="exampleModalLabel"></h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
-          ...
+        <div id="modalContent" class="modal-body">
+            <!--Content on Javascript-->
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+        <div id="modalFooter" class="modal-footer">
+            <!--Content on Javascript-->
         </div>
       </div>
     </div>
