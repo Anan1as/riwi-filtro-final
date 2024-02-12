@@ -1,25 +1,39 @@
 {
-    "admins":[
-        {
-            "id" : "ff15",
-            "names" : "Admin Outlet",
-            "email" : "admin@outlet.com",
-            "password" : "password"
-        }
-    ],
-    "brands":[
-        {
-            "id" : "ff16",
-            "name" : "Totto",
-            "local" : "127",
-            "floor" : "1",
-            "schedule" : [
-                "Lunes - Sábado: 10:00 am - 7:00 pm",
-                "Domingos y festivos: 10:00am - 6:00pm"
-            ],
-            "logo" : "https://demodaoutlet.com/wp-content/uploads/2023/06/totto-medellin.jpg",
-            "website" : "https://www.co.totto.com",
-            "desciption": "Encuentra en Totto morrales, maletas de viaje, ropa para toda la familia. Encuentra también accesorios como guantes, gorras, gafas de sol, relojes con ofertas todo el año."
-        }
-    ]
+  "admins": [
+    {
+      "id": "ff15",
+      "names": "Admin Outlet",
+      "email": "admin@outlet.com",
+      "password": "password"
+    }
+  ],
+  "brands": [
+    {
+      "id": "ff16",
+      "name": "Totto",
+      "local": "127",
+      "floor": "1",
+      "schedule": [
+        "Lunes - Sábado: 10:00 am - 7:00 pm",
+        "Domingos y festivos: 10:00am - 6:00pm"
+      ],
+      "logo": "https://demodaoutlet.com/wp-content/uploads/2023/06/totto-medellin.jpg",
+      "website": "https://www.co.totto.com",
+      "desciption": "Encuentra en Totto morrales, maletas de viaje, ropa para toda la familia. Encuentra también accesorios como guantes, gorras, gafas de sol, relojes con ofertas todo el año."
+    }
+  ],
+  "pqrs": [
+    {
+      "id": "a8b4",
+      "slPqrs": "Quejas",
+      "emailUser": "example@gmail.com",
+      "description": "El producto que compre no es el que esperaba"
+    },
+    {
+      "id": "a8b5",
+      "slPqrs": "Reclamo",
+      "emailUser": "fulanito@gmail.com",
+      "mensajeUser": "La página está muy lenta."
+    }
+  ]
 }

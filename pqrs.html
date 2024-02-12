@@ -16,6 +16,7 @@
   <link href="template/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="template/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="template/css/style.css" rel="stylesheet">
+  <script src="assets/js/pqrs.js" defer></script>
 </head>
 
 <body>
@@ -60,24 +61,27 @@
         <div class="col-md-4">
             <div class="mt-4">
                 <label for="">PQRS</label>
-                <select name="" id="" class="form-select">
-                    <option value="">Seleccionar...</option>
-                    <option value="">Petición</option>
-                    <option value="">Queja</option>
-                    <option value="">Reclamo</option>
-                    <option value="">Sugerencia</option>
+                <select name="" id="slPqrs" class="form-select">
+                    <option value="default">Seleccionar...</option>
+                    <option value="Petición">Petición</option>
+                    <option value="Queja">Queja</option>
+                    <option value="Reclamo">Reclamo</option>
+                    <option value="Sugerencia">Sugerencia</option>
                 </select> 
             </div>
             <div class="mt-4">
                 <label for="">Correo electronico</label>
-                <input type="text" class="form-control">   
+                <input id="emailUser" type="text" class="form-control">   
             </div>
             <div class="mt-4">
                 <label for="">Mensaje</label>
-                <textarea name="" id="" cols="30" rows="3" class="form-control"></textarea>  
+                <textarea name="message" id="messageUser" cols="30" rows="3" class="form-control"></textarea>  
+            </div>
+            <div>
+              <p id="aviso"></p>
             </div>
             <div class="mt-4">
-                <button class="btn btn-primary">Enviar</button>  
+                <button id="btnEnviar" class="btn btn-primary">Enviar</button>  
             </div>
            
         </div>
