@@ -16,6 +16,7 @@
   <link href="template/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="template/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="template/css/style.css" rel="stylesheet">
+  <script src="assets/js/login.js" defer></script>
 </head>
 <body>
 
@@ -59,14 +60,17 @@
         <div class="col-md-4">
             <div class="mt-4">
                 <label for="">Correo electrónico</label>
-                <input placeholder="" type="text" class="form-control is-valid">   
+                <input id="email" placeholder="" type="text" class="form-control">   
             </div>
             <div class="mt-4">
                 <label for="">Contraseña</label>
-                <input placeholder="" type="password" class="form-control is-invalid">   
+                <input id="password" placeholder="" type="password" class="form-control">   
+            </div>
+            <div>
+              <p id="aviso"></p>
             </div>
             <div class="mt-4">
-                <button class="btn btn-primary">Autenticarme</button>  
+                <button id="btnAutenticarme" class="btn btn-primary">Autenticarme</button>  
             </div>
            
         </div>
