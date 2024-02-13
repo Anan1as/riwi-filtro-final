@@ -12,6 +12,7 @@
   <link href="template/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="template/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="template/css/style.css" rel="stylesheet">
+  <script src="./assets/js/index.js" defer></script>
 </head>
 <body>
   <section id="topbar" class="d-flex align-items-center">
@@ -51,7 +52,7 @@
       <h1>Bienvenidos a  <span>DeModaOutlet</span></h1>
       <h2>Contamos con una gran cantidad de marcas</h2>
       <div class="d-flex">
-            <input placeholder="Buscar marcas..." type="search" class="form-control form-control-lg radius-0" style="width: 400px;">   
+            <input id="marcaBuscar" onkeyup="buscarMarca()" placeholder="Buscar marcas..." type="search" class="form-control form-control-lg radius-0" style="width: 400px;">   
             <br>
       </div>
     </div>
@@ -63,16 +64,8 @@
 
     <section id="featured-services" class="featured-services">
       <div class="container" data-aos="fade-up">
-        <div class="row">
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-              <img src="https://demodaoutlet.com/wp-content/uploads/2023/06/totto-medellin.jpg" class="img-fluid" alt="">
-              <h4 class="title"><a href="">Totto</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-              <br>
-              <button class="btn btn-primary w-100 btn-sm">Detalles</button>
-            </div>
-          </div>
+        <div id="brandIndex" class="row">
+          <!--Content on Javascript-->
         </div>
       </div>
     </section>
