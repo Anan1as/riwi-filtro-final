@@ -11,6 +11,7 @@
 		<link href="../../template/css/bootstrap.min.css" rel="stylesheet" type="text/css" id="app-style" />
 		<link href="../../template/css/app.min.css" rel="stylesheet" type="text/css" />
 		<link href="../../template/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <script src="../../assets/js/admin-brands.js" defer></script>
     </head>
     <body>
         <div id="wrapper">
@@ -60,7 +61,7 @@
                         <li class="menu-item">
                             <a href="#" class="menu-link text-danger">
                                 <span class="menu-icon"><i class="fe-log-out"></i></span>
-                                <span class="menu-text"> Cerrar sesión </span>
+                                <span id="closeSession" class="menu-text"> Cerrar sesión </span>
                             </a>
                         </li>
                     </ul>
@@ -74,7 +75,7 @@
                             <div class="col-md-12">
                                  <div class="card">
                                     <div class="card-body">
-                                        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        <button id="btnCrearMarca" type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                            Crear nueva marca
                                           </button>
                                         <div class="table-responsive mt-4">
@@ -91,45 +92,27 @@
                                                         <th>ACCIONES</th>
                                                     </tr>
                                                 </thead>
-                                                <tbody>
+                                                <tbody id="tableBrands">
                                                     <tr>
                                                         
                                                         <td>
-                                                            <input type="text" class="form-control form-control-sm">
+                                                            <input id="idBrandBuscar" onkeyup="buscarID()" type="text" class="form-control form-control-sm">
                                                         </td>
                                                         <td></td>
-                                                        <td><input type="text" class="form-control form-control-sm"></td>
-                                                        <td><input type="text" class="form-control form-control-sm"></td>
-                                                        <td><input type="text" class="form-control form-control-sm"></td>
-                                                        <td></td>
+                                                        <td><input id="nameBrandBuscar" onkeyup="buscaName()" type="text" class="form-control form-control-sm"></td>
+                                                        <td><input id="localBrandBuscar" onkeyup="buscarLocal()" type="text" class="form-control form-control-sm"></td>
+                                                        <td><input id="floorBrandBuscar" onkeyup="buscarFloor()" type="text" class="form-control form-control-sm"></td>
                                                         <td>
-                                                        
+                                                        <!--Vacio-->
                                                         </td>
                                                         <td>
-                                                            <button class="btn btn-sm btn-info">Buscar</button>
-                                                
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        
-                                                        <td>ff16</td>
-                                                        <td><img width="100px" src="https://demodaoutlet.com/wp-content/uploads/2023/06/totto-medellin.jpg" alt=""></td>
-                                                        <td>Totto</td>
-                                                        <td>127</td>
-                                                        <td>1</td>
-                                                        <td>
-                                                            Lunes - sábado: 10:00 a.m. - 7:00 p.m.  <br>
-                                                            Domingos y festivos: 10:00 a.m. - 6:00 p.m.
+                                                        <!--Vacio-->
                                                         </td>
                                                         <td>
-                                                            <a href="https://google.com">Sitio web</a>
-                                                        </td>
-                                                        <td>
-                                                            <button class="btn btn-sm btn-info">Detalles</button>
-                                                            <button class="btn btn-sm btn-warning">Editar</button>
-                                                            <button class="btn btn-sm btn-danger">Eliminar</button>
+                                                            <p>Este botón a cometido un golpe de estado.</p>
                                                         </td>
                                                     </tr>
+                                                    <!--Content on Javascript-->
                                                 </tbody>
                                             </table>
                                         </div>
@@ -160,15 +143,14 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <h1 id="titleModal" class="modal-title fs-5" id="exampleModalLabel"></h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
-          ...
+        <div id="modalContent" class="modal-body">
+          <!--Content on Javascript-->
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+        <div id="modalFooter" class="modal-footer">
+          <!--Content on Javascript-->
         </div>
       </div>
     </div>

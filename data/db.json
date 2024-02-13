@@ -28,9 +28,29 @@
         "Lunes - Sábado: 10:00 am - 7:00 pm",
         "Domingos y festivos: 10:00am - 6:00pm"
       ],
-      "logo": "https://demodaoutlet.com/wp-content/uploads/2023/06/totto-medellin.jpg",
+      "logo": "https://i.ibb.co/j4LGSpH/totto-medellin.jpg",
       "website": "https://www.co.totto.com",
-      "desciption": "Encuentra en Totto morrales, maletas de viaje, ropa para toda la familia. Encuentra también accesorios como guantes, gorras, gafas de sol, relojes con ofertas todo el año."
+      "description": "Encuentra en Totto morrales, maletas de viaje, ropa para toda la familia. Encuentra también accesorios como guantes, gorras, gafas de sol, relojes con ofertas todo el año."
+    },
+    {
+      "id": "2a5c",
+      "name": "Lili Pink",
+      "local": "100",
+      "floor": "2",
+      "schedule": "Lunes a Viernes: 8:00am - 6:00pm / Domingos y Festivos: 9:00am - 5:00pm",
+      "logo": "https://i.ibb.co/YQm26R5/logo-lilipink.jpg",
+      "website": "https://www.lilipink.com/",
+      "description": "El sitio ideal para comprar ropa interior al gusto de cualquier dama, excelente calidad y precios para todos."
+    },
+    {
+      "id": "b028",
+      "name": "Riwi",
+      "local": "221",
+      "floor": "3",
+      "schedule": "Lunes a Viernes: 6:00am - 10:00pm",
+      "logo": "https://i.ibb.co/F88DbXS/logo-riwi.png",
+      "website": "https://riwi.io/",
+      "description": "Se un coder, cambia tu mundo. Somos un ecosistema de formación y empleo de desarrolladores de software con BECAS 100% condonables. Buscamos jóvenes, empresas y personas que quieran hacer parte de este proyecto que construye país y cambia vidas."
     }
   ],
   "pqrs": [
