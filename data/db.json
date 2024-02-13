@@ -43,7 +43,7 @@
       "description": "El sitio ideal para comprar ropa interior al gusto de cualquier dama, excelente calidad y precios para todos."
     },
     {
-      "id": "b028",
+      "id": "bbcc",
       "name": "Riwi",
       "local": "221",
       "floor": "3",
@@ -55,14 +55,8 @@
   ],
   "pqrs": [
     {
-      "id": "a8b4",
-      "slPqrs": "Quejas",
-      "emailUser": "example@gmail.com",
-      "description": "El producto que compre no es el que esperaba"
-    },
-    {
       "id": "a8b5",
-      "slPqrs": "Reclamo",
+      "type": "Reclamo",
       "emailUser": "fulanito@gmail.com",
       "mensajeUser": "La página está muy lenta."
     }

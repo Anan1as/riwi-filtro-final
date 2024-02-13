@@ -11,6 +11,7 @@
 		<link href="../../template/css/bootstrap.min.css" rel="stylesheet" type="text/css" id="app-style" />
 		<link href="../../template/css/app.min.css" rel="stylesheet" type="text/css" />
 		<link href="../../template/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <script src="../../assets/js/admin-pqrs.js" defer></script>
     </head>
     <body>
         <div id="wrapper">
@@ -60,7 +61,7 @@
                         <li class="menu-item">
                             <a href="./brands/index.html" class="menu-link text-danger">
                                 <span class="menu-icon"><i class="fe-log-out"></i></span>
-                                <span class="menu-text"> Cerrar sesión </span>
+                                <span id="closeSession" class="menu-text"> Cerrar sesión </span>
                             </a>
                         </li>
                     </ul>
@@ -86,41 +87,29 @@
                                                         <th>ACCIONES</th>
                                                     </tr>
                                                 </thead>
-                                                <tbody>
+                                                <tbody id="tablePqrs">
                                                     <tr>
                                                         
                                                         <td>
-                                                            <input type="text" class="form-control form-control-sm">
+                                                            <input id="idPqrsBuscar" onkeyup="buscarId()" type="text" class="form-control form-control-sm">
                                                         </td>
                                                         <td>
-                                                            <select name="" id="" class="form-select form-select-sm">
-                                                                <option value="">Seleccionar...</option>
-                                                                <option value="">Petición</option>
-                                                                <option value="">Queja</option>
-                                                                <option value="">Reclamo</option>
-                                                                <option value="">Sugerencia</option>
+                                                            <select name="type" id="typePqrsBuscar" class="form-select form-select-sm">
+                                                                <option value="default">Seleccionar...</option>
+                                                                <option value="Petición">Petición</option>
+                                                                <option value="Queja">Queja</option>
+                                                                <option value="Reclamo">Reclamo</option>
+                                                                <option value="Sugerencia">Sugerencia</option>
                                                             </select>
                                                         </td>
-                                                        <td><input type="text" class="form-control form-control-sm"></td>
-                                                        <td><input type="text" class="form-control form-control-sm"></td>
+                                                        <td><input id="emailPqrsBuscar" onkeyup="buscarCorreo()" type="text" class="form-control form-control-sm"></td>
+                                                        <td><input id="mensajePqrsBuscar" onkeyup="buscarMensaje()" type="text" class="form-control form-control-sm"></td>
                                                     
                                                         <td>
-                                                            <button class="btn btn-sm btn-info">Buscar</button>
-                                                
+                                                            <p>Este botón a decidido viajar por el mundo y no ser como sus hermanos.</p>
                                                         </td>
                                                     </tr>
-                                                    <tr>
-                                                        
-                                                        <td>ff17</td>
-                                                        <td>Sugerencia</td>
-                                                        <td>robinson.cortes@riwi.io</td>
-                                                        <td>
-                                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis illo totam accusantium.
-                                                        </td>
-                                                        <td>
-                                                            <button class="btn btn-sm btn-danger">Eliminar</button>
-                                                        </td>
-                                                    </tr>
+                                                    <!--Content on Javascript-->
                                                 </tbody>
                                             </table>
                                         </div>

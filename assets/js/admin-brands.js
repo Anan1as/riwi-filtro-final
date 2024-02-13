@@ -300,7 +300,7 @@ fetch('http://localhost:3000/brands')
         btnDelete.innerHTML = 'Eliminar';
         btnDelete.classList.add('btn', 'btn-danger');
         btnDelete.addEventListener('click', function() {
-            fetch(`http://localhost:3000/admins/${brand.id}`, {
+            fetch(`http://localhost:3000/brands/${brand.id}`, {
                 method: 'DELETE'
             }).then(response => response.json())
             .then(data => {
